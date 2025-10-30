@@ -2,5 +2,10 @@
   "name": "@flida/sdk",
   "version": "1.0.0",
   "license": "MIT",
-  "exports": "./dist/sdk.js"
+  "exports": "./dist/sdk.js",
+  "publish": {
+    "exclude": [
+      "!dist/**" 
+    ]
+  }
 }
