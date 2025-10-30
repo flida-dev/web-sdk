@@ -1,11 +1,11 @@
-import {clearCookie, generateId, getCookie, setCookie} from './helpers'
-import { PkceConfig } from './types';
-import {Base64} from 'js-base64'
-import {sha256} from 'js-sha256'
+import type { PkceConfig } from './types'
+import { Base64 } from 'js-base64'
+import { sha256 } from 'js-sha256'
+import { clearCookie, generateId, getCookie, setCookie } from './helpers'
 
 export class Pkce {
     constructor(
-        private readonly config?: PkceConfig, 
+        private readonly config?: PkceConfig,
     ) {}
 
     clearSavedCodeVerifier() {
@@ -18,7 +18,7 @@ export class Pkce {
         }
 
         const oldCodeVerifier = getCookie('code_verifier')
-        
+
         if (!oldCodeVerifier) {
             const newCodeVerifier = generateId()
             setCookie('code_verifier', newCodeVerifier)
@@ -35,7 +35,7 @@ export class Pkce {
 
         const codeVerifier = this.getCodeVerifier()
         const hash = sha256(codeVerifier)
-        
+
         return Base64.encodeURL(hash)
-    };
+    }
 }
