@@ -1,4 +1,4 @@
-import { Errors, FlidaError } from './errors'
+import { errors, FlidaError } from './errors'
 import { clearCookie, generateId, getCookie, setCookie } from './helpers'
 
 export class State {
@@ -26,7 +26,7 @@ export class State {
 
     public checkState(check: string): FlidaError | undefined {
         if (this.state !== check) {
-            return new FlidaError(Errors.INVALID_STATE, 'State mismatch error')
+            return new FlidaError(errors.INVALID_STATE, 'State mismatch error')
         }
 
         clearCookie('state')
