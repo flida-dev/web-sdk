@@ -14,6 +14,11 @@
         "@semantic-release/changelog",
         "@semantic-release/git",
         "@semantic-release/github",
-        "@sebbo2002/semantic-release-jsr"
+        [
+            "@sebbo2002/semantic-release-jsr",
+            {
+                "publishArgs": ["--allow-slow-types"]
+            }
+        ]
     ]
   }
