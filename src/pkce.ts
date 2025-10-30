@@ -34,8 +34,9 @@ export class Pkce {
         }
 
         const codeVerifier = this.getCodeVerifier()
-        const hash = sha256(codeVerifier)
+        const hashBytes = sha256.array(codeVerifier)
+        const uint8Hash = new Uint8Array(hashBytes)
 
-        return Base64.encodeURL(hash)
+        return Base64.fromUint8Array(uint8Hash, true)
     }
 }
