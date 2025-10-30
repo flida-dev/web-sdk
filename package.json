@@ -4,6 +4,8 @@
 	"version": "1.0.0",
 	"description": "Flida Web SDK",
 	"type": "module",
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
 	"scripts": {
 		"build": "vite build",
 		"lint": "eslint . --ext .js,.ts --fix",
@@ -30,6 +32,7 @@
 		"semantic-release": "^25.0.1",
 		"simple-git-hooks": "^2.13.1",
 		"typescript": "^5.9.3",
-		"vite": "^7.1.12"
+		"vite": "^7.1.12",
+		"vite-plugin-dts": "^4.5.4"
 	}
 }
