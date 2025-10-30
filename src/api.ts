@@ -16,8 +16,7 @@ export class Api {
             },
         })
 
-        const json = response.json()
-        return json
+        return response.json()
     }
 
     private async tokenService(endpoint: string, json: any) {

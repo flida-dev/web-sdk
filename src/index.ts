@@ -36,20 +36,26 @@ export class SDK {
             throw stateError
         }
 
-        const response = await this.api.issueToken({
-            client_secret: '',
-            client_id: this.config.clientId,
-            authorization_code: code,
-            code_verifier: this.pkce.getCodeVerifier(),
-            redirect_uri: this.config.redirectUri,
-        })
+        try {
+            const response = await this.api.issueToken({
+                client_secret: '',
+                client_id: this.config.clientId,
+                authorization_code: code,
+                code_verifier: this.pkce.getCodeVerifier(),
+                redirect_uri: this.config.redirectUri,
+            })
 
-        // eslint-disable-next-line no-console
-        console.log('Clearing saved code verifier')
+            // eslint-disable-next-line no-console
+            console.log('Clearing saved code verifier')
 
-        this.pkce.clearSavedCodeVerifier()
+            this.pkce.clearSavedCodeVerifier()
 
-        return response
+            return response
+        }
+        catch (e) {
+            console.error(e)
+            throw e
+        }
     }
 
     public async refreshToken(refreshToken: string) {
