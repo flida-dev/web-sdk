@@ -1,3 +1,13 @@
+# [1.0.0-develop.2](https://github.com/flida-dev/web-sdk/compare/v1.0.0-develop.1...v1.0.0-develop.2) (2025-10-30)
+
+
+### Bug Fixes
+
+* exports ([ff011a8](https://github.com/flida-dev/web-sdk/commit/ff011a8d94df19fbd87171e4b15893f894e2dd75))
+* update exclude ([35b9b48](https://github.com/flida-dev/web-sdk/commit/35b9b48544d4a0228c0f130f90b39f28b57496cc))
+* update releaserc ([75d1f91](https://github.com/flida-dev/web-sdk/commit/75d1f9195d5b6dc04c1e6570bc168ee740dbe25f))
+* update releaserc ([d6042e5](https://github.com/flida-dev/web-sdk/commit/d6042e50920483db9f585dbc31a160c7ffeb09c8))
+
 # 1.0.0-develop.1 (2025-10-30)
 
 
