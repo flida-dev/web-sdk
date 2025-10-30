@@ -27,7 +27,7 @@ export class SDK {
 
         const params = new URLSearchParams({ ...authRequest })
 
-        window.open(`${ID_URL}/oauth?${params.toString()}`)
+        location.assign(`${ID_URL}/oauth?${params.toString()}`)
     }
 
     public async exchangeCode(code: string, state: string) {

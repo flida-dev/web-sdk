@@ -25,7 +25,7 @@ export class State {
     }
 
     public checkState(check: string): FlidaError | undefined {
-        if (this.state !== check) {
+        if (this.getState() !== check) {
             return new FlidaError(errors.INVALID_STATE, 'State mismatch error')
         }
 
