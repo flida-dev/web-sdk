@@ -1,3 +1,10 @@
+## [1.0.7](https://github.com/flida-dev/web-sdk/compare/v1.0.6...v1.0.7) (2025-10-30)
+
+
+### Bug Fixes
+
+* update set-cookie ([edf3a17](https://github.com/flida-dev/web-sdk/commit/edf3a17210ca457832507c961cac868bd93b2dc7))
+
 ## [1.0.6](https://github.com/flida-dev/web-sdk/compare/v1.0.5...v1.0.6) (2025-10-30)
 
 
