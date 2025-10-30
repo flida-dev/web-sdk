@@ -1,3 +1,10 @@
+## [1.0.8](https://github.com/flida-dev/web-sdk/compare/v1.0.7...v1.0.8) (2025-10-30)
+
+
+### Bug Fixes
+
+* fix pkce ([3cbaa9f](https://github.com/flida-dev/web-sdk/commit/3cbaa9fc2447e7ab0b54ff6dac1c49feb16aafe1))
+
 ## [1.0.7](https://github.com/flida-dev/web-sdk/compare/v1.0.6...v1.0.7) (2025-10-30)
 
 
