@@ -1,0 +1,6 @@
+{
+  "name": "@flida/sdk",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": "./dist/sdk.mjs"
+}
