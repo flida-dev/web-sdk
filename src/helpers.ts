@@ -39,6 +39,8 @@ export function setCookie(name: string, value: string): void {
 }
 
 export function clearCookie(name: string) {
+    // eslint-disable-next-line no-console
+    console.log('Clearing cookie:', name)
     const allowedDomain = location.host.split('.').slice(-2).join('.')
     try {
         document.cookie = [

@@ -8,7 +8,7 @@ export class Pkce {
         private readonly config?: PkceConfig,
     ) {}
 
-    clearSavedCodeVerifier() {
+    public clearSavedCodeVerifier() {
         clearCookie('code_verifier')
     }
 

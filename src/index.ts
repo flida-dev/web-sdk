@@ -44,6 +44,9 @@ export class SDK {
             redirect_uri: this.config.redirectUri,
         })
 
+        // eslint-disable-next-line no-console
+        console.log('Clearing saved code verifier')
+
         this.pkce.clearSavedCodeVerifier()
 
         return response
