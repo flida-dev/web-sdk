@@ -16,7 +16,21 @@ export class Api {
             },
         })
 
-        return response.json()
+        let json: any
+        try {
+            // eslint-disable-next-line ts/no-unsafe-assignment
+            json = await response.json()
+        }
+        catch (e) {
+            json = { message: `Non-JSON response: ${e as any}` }
+        }
+
+        if (!response.ok) {
+            console.error('API error:', response.status)
+            throw new Error(`Request failed: ${response.status}`)
+        }
+
+        return json
     }
 
     private async tokenService(endpoint: string, json: any) {
