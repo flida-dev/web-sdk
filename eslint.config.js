@@ -7,6 +7,8 @@ export default antfu({
         '**/dist/**',
         '**/*.md',
         '**/*.json',
+        '**/*.yaml',
+        '**/*.yml',
     ],
     typescript: {
         tsconfigPath: 'tsconfig.json',
