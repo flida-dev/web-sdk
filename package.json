@@ -3,6 +3,7 @@
 	"author": "Flida",
 	"version": "1.0.0",
 	"description": "Flida Web SDK",
+	"type": "module",
 	"scripts": {
 		"build": "vite build",
 		"lint": "eslint . --ext .js,.ts --fix",
