@@ -35,7 +35,7 @@ button.addEventListener("click", () => {
 ```ts
 // https://example.com?code=<random>&state=<random>
 
-// Обмен code & state на токены
+// Обмен code & state на токены:
 const tokenResponse = await sdk.exchangeCode(code, state) // Вернет объект с токенами
 saveToYourStorage(tokenResponse)
 
