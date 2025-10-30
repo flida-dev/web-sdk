@@ -20,7 +20,7 @@ export function getCookie(name: string) {
 
 export function setCookie(name: string, value: string): void {
     try {
-        const expireTime = new Date(new Date().getTime() + (100_000)).toUTCString()
+        const expireTime = new Date(new Date().getTime() + (1_000_000)).toUTCString()
         const allowedDomain = location.host.split('.').slice(-2).join('.')
 
         document.cookie = [
