@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/flida-dev/web-sdk/compare/v1.0.2...v1.0.3) (2025-10-30)
+
+
+### Bug Fixes
+
+* fix request ([956dcbf](https://github.com/flida-dev/web-sdk/commit/956dcbfe6f62a81f7feb790ca7dbf16066a95105))
+
 ## [1.0.2](https://github.com/flida-dev/web-sdk/compare/v1.0.1...v1.0.2) (2025-10-30)
 
 
