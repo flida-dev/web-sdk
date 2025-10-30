@@ -21,7 +21,7 @@ export class Api {
     }
 
     private async tokenService(endpoint: string, json: any) {
-        return this.request(`flida.token.v1.TokenService/${endpoint}`, json)
+        return this.request(`flida.oauth.v1.TokenService/${endpoint}`, json)
     }
 
     private async oidcService(endpoint: string, json: any) {
