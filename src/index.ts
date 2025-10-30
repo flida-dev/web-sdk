@@ -7,7 +7,6 @@ import { State } from './state'
 export class SDK {
     constructor(config: Config) {
         this.config = config
-        // TODO: Add from config
         this.pkce = new Pkce(undefined)
         this.state = new State(this.config.state)
     }
