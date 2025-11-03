@@ -25,7 +25,10 @@ const sdk = new FlidaSDK({
   clientId: '<client_id_from_console>',
   redirectUri: '<redirect_uri_from_console>',
   scope: ['e-mail-address', 'openid'],
-  mode: SDKMode.POPUP
+  mode: SDKMode.POPUP,
+  mock: {
+    api: 'https://mock-api.server.com'
+  }
 })
 
 button.addEventListener("click", () => {

@@ -2,12 +2,14 @@ import type { GetUserInfoResponse, TokenResponse } from './api.types'
 import { API_URL } from './constants'
 
 export class Api {
-    constructor() {
-
+    constructor(mockUrl?: string) {
+        this.url = mockUrl || API_URL
     }
 
+    private url: string
+
     private async request(endpoint: string, body?: any): Promise<any> {
-        const response = await fetch(`${API_URL}/${endpoint}`, {
+        const response = await fetch(`${this.url}/${endpoint}`, {
             method: 'POST',
             body: body ? JSON.stringify(body) : undefined,
             headers: {

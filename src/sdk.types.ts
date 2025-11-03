@@ -29,6 +29,10 @@ export interface SDKConfig {
      * Mode
      */
     readonly mode?: SDKMode
+
+    mock?: {
+        api: string
+    }
 }
 
 /**

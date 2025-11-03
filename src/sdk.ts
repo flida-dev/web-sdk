@@ -8,11 +8,12 @@ import { Security } from './security/security'
 
 export class SDK {
     constructor(config: SDKConfig) {
+        this.api = new Api(config.mock?.api)
         this.config = { mode: SDKMode.REDIRECT, ...config }
     }
 
     private config: SDKConfig
-    private api = new Api()
+    private api: Api
     private security = new Security()
     private messageBridge = new MessageBridge(this.security)
 
