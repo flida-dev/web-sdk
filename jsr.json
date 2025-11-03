@@ -1,5 +1,5 @@
 {
-  "name": "@flida/sdk",
+  "name": "@flida/web-sdk",
   "version": "1.0.0",
   "license": "MIT",
   "exports": "./dist/index.js",
