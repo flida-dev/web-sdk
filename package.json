@@ -1,0 +1,41 @@
+{
+	"name": "@flida/sdk",
+	"author": "Flida",
+	"version": "1.0.0",
+	"description": "Flida Web SDK",
+	"type": "module",
+	"types": "./dist/index.d.ts",
+	"main": "./dist/index.js",
+	"scripts": {
+		"build": "vite build",
+		"lint": "eslint . --ext .js,.ts --fix",
+		"commit": "commit",
+		"test": "vitest"
+	},
+	"dependencies": {
+		"js-base64": "^3.7.8",
+		"js-sha256": "^0.11.1"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^6.1.0",
+		"@commitlint/cli": "^20.1.0",
+		"@commitlint/config-conventional": "^20.0.0",
+		"@commitlint/prompt-cli": "^20.1.0",
+		"@sebbo2002/semantic-release-jsr": "^3.0.1",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/commit-analyzer": "^13.0.1",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/github": "^12.0.0",
+		"@semantic-release/release-notes-generator": "^14.1.0",
+		"eslint": "^9.38.0",
+		"jsdom": "^27.1.0",
+		"lint-staged": "^16.2.6",
+		"nanoid": "^5.1.6",
+		"semantic-release": "^25.0.1",
+		"simple-git-hooks": "^2.13.1",
+		"typescript": "^5.9.3",
+		"vite": "^7.1.12",
+		"vite-plugin-dts": "^4.5.4",
+		"vitest": "^4.0.6"
+	}
+}
