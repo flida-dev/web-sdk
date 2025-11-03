@@ -4,22 +4,22 @@
 
 ### NPM
 ```
-npx jsr add @flida/sdk
+npx jsr add @flida/web-sdk
 ```
 
 ### PNPM
 ```
-pnpm i jsr:@flida/sdk
+pnpm i jsr:@flida/web-sdk
 ```
 
 ### YARN
 ```
-yarn add jsr:@flida/sdk
+yarn add jsr:@flida/web-sdk
 ```
 
 ## Пример
 ```ts
-import { FlidaSDK, SDKMode } from '@flida/sdk'
+import { FlidaSDK, SDKMode } from '@flida/web-sdk'
 
 const sdk = new FlidaSDK({
   clientId: '<client_id_from_console>',
