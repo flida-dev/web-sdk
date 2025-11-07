@@ -47,17 +47,15 @@ export class MessageBridge {
                     return
                 }
 
-                try {
-                    this.security.state.verifyAndClear(event.data.payload.state)
+                if (state === event.data.payload.state) {
                     resolve(event.data.payload)
                 }
-                catch (e) {
-                    reject(e)
+                else {
+                    reject(new FlidaError(ErrorCode.INVALID_STATE))
                 }
-                finally {
-                    reset()
-                    opener?.close?.()
-                }
+
+                reset()
+                opener?.close?.()
             }
 
             const abort = () => {
