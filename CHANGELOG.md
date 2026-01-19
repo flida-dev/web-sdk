@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/flida-dev/web-sdk/compare/v1.1.1...v1.1.2) (2026-01-19)
+
+
+### Bug Fixes
+
+* update api option name ([3fd9402](https://github.com/flida-dev/web-sdk/commit/3fd9402ec34b33f887773340c0fa9ac1353c5e41))
+
 ## [1.1.1](https://github.com/flida-dev/web-sdk/compare/v1.1.0...v1.1.1) (2025-11-07)
 
 
