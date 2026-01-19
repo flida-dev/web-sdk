@@ -2,8 +2,8 @@ import type { GetUserInfoResponse, TokenResponse } from './api.types'
 import { API_URL } from './constants'
 
 export class Api {
-    constructor(mockUrl?: string) {
-        this.url = mockUrl || API_URL
+    constructor(url?: string) {
+        this.url = url || API_URL
     }
 
     private url: string
