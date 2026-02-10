@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/flida-dev/web-sdk/compare/v1.1.2...v1.1.3) (2026-02-10)
+
+
+### Bug Fixes
+
+* dump ([6c864a1](https://github.com/flida-dev/web-sdk/commit/6c864a1b15fa06c54f08113368c8b6c35a5b9ebd))
+
 ## [1.1.2](https://github.com/flida-dev/web-sdk/compare/v1.1.1...v1.1.2) (2026-01-19)
 
 
