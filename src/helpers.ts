@@ -67,7 +67,7 @@ export function clearCookie(name: string) {
 
 export function openWindow(url: string, popup = false): WindowProxy | null {
     let windowFeatures = ''
-    const POPUP_SIZE = 500
+    const POPUP_SIZE = 600
 
     if (popup) {
         const top = screen.height / 2 - POPUP_SIZE / 2
